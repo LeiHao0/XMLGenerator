@@ -16,28 +16,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    XMLDeclaration *xmlDeclaration = [[XMLDeclaration alloc] initWithVersion:@"1.0" encoding:@"UTF-8"];
     
-    Node *categoryList  = [[Node alloc] initWithTag:@"CategoryList"];
-    
-    Node *category = [[Node alloc] initWithTag:@"category" attribute:@{@"ID": @"01"}];
-    [categoryList addChildNode:category];
-    
-    Node *mainCategory = [[Node alloc] initWithTag:@"mainCategory" elemnet:@"XML"];
-    [category addChildNode:mainCategory];
-    
-    Node *description = [[Node alloc] initWithTag:@"description" elemnet:@"This is a list my XML articles."];
-    [category addChildNode:description];
-    
-    Node *active = [[Node alloc] initWithTag:@"active" elemnet:@"true"];
-    [category addChildNode:active];
-    
-    
-    XMLFormatted *textXML = [[XMLFormatted alloc] init];
-    NSLog(@"%@", textXML);
-    
-    textXML = [[XMLFormatted alloc] initWithDeclaration:xmlDeclaration rootNode:categoryList];
-    NSLog(@"%@", textXML);
+    /*
+     // set version & encoding
+     XMLDeclaration *xmlDeclaration = [[XMLDeclaration alloc] initWithVersion:@"1.0" encoding:@"BG2312"];
+     
+     Node *root = [[Node alloc] initWithTag:@"body"];
+     Node *imageNode = [[Node alloc] initWithTag:@"img" attribute:@{@"src":@"./img/xxx.png"}];
+     // add child node
+     [root addChildNode:imageNode];
+     
+     // print all descendant nodes
+     NSLog(@"%@", root.formattedSelf);
+     
+     // del child node
+     [root delChildNode:imageNode];
+     
+     // get parent node
+     [imageNode getParentNode];
+     
+     // get all children nodes
+     [root getChildrenNodes];
+     */
     
     return YES;
 }

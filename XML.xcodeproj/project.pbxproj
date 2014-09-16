@@ -455,6 +455,7 @@
 				6EC3DE4619C7EEF500FA4A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EC3DE4719C7EEF500FA4A5C /* Build configuration list for PBXNativeTarget "XMLTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +464,7 @@
 				6EC3DE4919C7EEF500FA4A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

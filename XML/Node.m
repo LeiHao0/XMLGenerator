@@ -73,6 +73,10 @@
     return _parentNode;
 }
 
+- (NSArray *)getChildrenNodes {
+   return [NSArray arrayWithArray:_childrenNodes];
+}
+
 #pragma mark - formatted
 
 - (NSString *)formattedSelf {

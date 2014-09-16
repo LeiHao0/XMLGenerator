@@ -18,6 +18,7 @@
 - (void)addChildNode:(Node *) childNode;
 - (void)delChildNode:(Node *) childNode;
 - (Node *)getParentNode;
+- (NSArray *)getChildrenNodes;
 
 - (NSString *)formattedSelf;
 

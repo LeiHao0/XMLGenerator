@@ -33,12 +33,13 @@
 }
 
 - (NSString *)formattedXMLDeclaration {
-    if (self.version == nil || self.encoding == nil) {
-        return @"";
-    } else {
+
         // example: <?xml version="1.0" encoding="UTF-8"?>
-        return [NSString stringWithFormat:@"<?xml version=\"%@\" encoding=\"%@\"?>\n", self.version, self.encoding];
-    }
+    NSString *version = _version==nil?@"":[NSString stringWithFormat:@"version=\"%@\"", _version];
+    NSString *encoding = _encoding==nil?@"":[NSString stringWithFormat:@" encoding=\"%@\"", _encoding];
+        
+//    return [NSString stringWithFormat:@"", self.version, self.encoding];
+    return [NSString stringWithFormat:@"<?xml %@%@?>\n", version, encoding];
 }
 
 @end
