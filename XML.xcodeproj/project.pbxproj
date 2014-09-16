@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E57D1F919C897C600ECADC2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E57D1F819C897C600ECADC2 /* Storyboard.storyboard */; };
+		6E57D1FC19C898C100ECADC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E57D1FB19C898C100ECADC2 /* ViewController.m */; };
 		6EC3DE1C19C7EEF500FA4A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC3DE1B19C7EEF500FA4A5C /* Foundation.framework */; };
 		6EC3DE1E19C7EEF500FA4A5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC3DE1D19C7EEF500FA4A5C /* CoreGraphics.framework */; };
 		6EC3DE2019C7EEF500FA4A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC3DE1F19C7EEF500FA4A5C /* UIKit.framework */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E57D1F819C897C600ECADC2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		6E57D1FA19C898C100ECADC2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6E57D1FB19C898C100ECADC2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6EC3DE1819C7EEF500FA4A5C /* XML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC3DE1B19C7EEF500FA4A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6EC3DE1D19C7EEF500FA4A5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E57D1FD19C898CD00ECADC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E57D1F819C897C600ECADC2 /* Storyboard.storyboard */,
+				6E57D1FA19C898C100ECADC2 /* ViewController.h */,
+				6E57D1FB19C898C100ECADC2 /* ViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		6EC3DE0F19C7EEF500FA4A5C = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +131,7 @@
 		6EC3DE2119C7EEF500FA4A5C /* XML */ = {
 			isa = PBXGroup;
 			children = (
+				6E57D1FD19C898CD00ECADC2 /* View */,
 				6EC3DE2A19C7EEF500FA4A5C /* AppDelegate.h */,
 				6EC3DE2B19C7EEF500FA4A5C /* AppDelegate.m */,
 				6EC3DE5019C8501C00FA4A5C /* XMLFormatted.h */,
@@ -236,6 +252,7 @@
 			files = (
 				6EC3DE2619C7EEF500FA4A5C /* InfoPlist.strings in Resources */,
 				6EC3DE2E19C7EEF500FA4A5C /* Images.xcassets in Resources */,
+				6E57D1F919C897C600ECADC2 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E57D1FC19C898C100ECADC2 /* ViewController.m in Sources */,
 				6EC3DE5219C8501C00FA4A5C /* XMLFormatted.m in Sources */,
 				6EC3DE2C19C7EEF500FA4A5C /* AppDelegate.m in Sources */,
 				6EC3DE2819C7EEF500FA4A5C /* main.m in Sources */,
